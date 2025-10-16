@@ -70,8 +70,8 @@ export const calendarService = {
       params.append('cursor', cursor);
     }
     
-    const grantId = 'a6b1b908-d31b-4053-96e3-b0dbe601a872';
-    const bearerToken = 'nyk_v0_cZetOkxLZ17wOrLAZqaNl5qBEBSGV94SwWiWAsBmEyloktwEEShIhPvAKgf5Lmip';
+    const grantId = 'd586cc16-b618-4faa-a7f9-6f8cfd00934d';
+    const bearerToken = 'nyk_v0_rvORXb29XjIV8Vl3MceTgW30uBOCDjmFZ4NzNjh0H74IthvBMbx5W0fuzUKnzNfr';
     
     const url = `https://api.us.nylas.com/v3/grants/${grantId}/events?${params}`;
     

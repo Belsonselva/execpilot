@@ -26,8 +26,8 @@ interface EmailResponse {
 
 export class EmailService {
   private static readonly NYLAS_BASE_URL = 'https://api.us.nylas.com/v3';
-  private static readonly GRANT_ID = 'a6b1b908-d31b-4053-96e3-b0dbe601a872';
-  private static readonly ACCESS_TOKEN = 'nyk_v0_cZetOkxLZ17wOrLAZqaNl5qBEBSGV94SwWiWAsBmEyloktwEEShIhPvAKgf5Lmip';
+  private static readonly GRANT_ID = 'd586cc16-b618-4faa-a7f9-6f8cfd00934d';
+  private static readonly ACCESS_TOKEN = 'nyk_v0_rvORXb29XjIV8Vl3MceTgW30uBOCDjmFZ4NzNjh0H74IthvBMbx5W0fuzUKnzNfr';
 
   static async retrieveEmails(params?: {
     limit?: number;
