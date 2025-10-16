@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif; 
+  --font-gelasio: "Gelasio", serif; 
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Smooth transitions for all elements */
+* {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

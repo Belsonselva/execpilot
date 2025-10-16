@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DashboardLayout from '../modules/common/DashboardLayout';
+import RetrieveCalendar from '../modules/calendar/components/RetrieveCalendar';
+---
+
+<Layout title="Calendar - ExecPilot">
+    <RetrieveCalendar client:load />
+</Layout>

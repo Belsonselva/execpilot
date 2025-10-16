@@ -1,0 +1,41 @@
+---
+import DashboardLayout from "modules/common/DashboardLayout";
+import "../styles/global.css";
+
+
+const urlHref = Astro.url.href;
+console.log("URL Href:", urlHref);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ExecPilot Dashboard</title>
+  </head>
+  <body class="bg-gray-50 font-inter">
+    <DashboardLayout urlHref={urlHref} client:load>
+      <slot />
+    </DashboardLayout>
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Ensure consistent responsive behavior */
+  @media (max-width: 1024px) {
+    .lg\:translate-x-0 {
+      transform: translateX(-100%);
+    }
+  }
+</style>
